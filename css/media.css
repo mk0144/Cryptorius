@@ -1,0 +1,193 @@
+/* global */
+:root {
+  --primary: #403ab8;
+  --secondary: #111111;
+  --secondary_blue: #f2f8ff;
+  --para: #888888;
+  --dark_gary: #5c5c5c;
+  --light_purple: #f2f8fe;
+}
+/* \global */
+
+/* tab */
+@media only screen and (max-width: 992px) {
+  /* common */
+  * {
+    font-size: 9px;
+  }
+
+  .right_col .pic {
+    display: none;
+  }
+
+  .left_col .pic {
+    display: none;
+  }
+  /* \common */
+
+  /* header */
+  header {
+    padding: 2rem 0;
+    background-color: var(--light_purple);
+  }
+
+  header.header_scroll .menu li a {
+    padding: 0;
+  }
+
+  header .menu {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 0 15px;
+    background-color: var(--light_purple);
+    z-index: 100;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 0;
+    row-gap: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 7.2rem;
+    transition: 1s all;
+  }
+
+  .menu.header_menu_show {
+    opacity: 1;
+    height: 100vh;
+    padding: 3.5rem 15px;
+    transition: 1s height linear;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.5rem;
+  }
+
+  header .menu ul li a {
+    padding: 0;
+  }
+
+  header .menu ul li::before {
+    display: none;
+  }
+
+  header .menu_icon {
+    display: block;
+  }
+  /* \header */
+
+  /* banner */
+  .banner {
+    height: initial;
+  }
+
+  .banner .container {
+    grid-template-columns: 1fr;
+    padding: 110px 15px 45px;
+    text-align: center;
+  }
+  /* \banner */
+
+  /* works */
+  .works .bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .works .bottom .right_col {
+    display: none;
+  }
+
+  .works .bottom h3 {
+    width: 100%;
+  }
+  /* \works */
+
+  /* features */
+  .features .bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* \features */
+
+  /* team */
+  .team .cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* \team */
+}
+/* \tab */
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  /* common */
+  * {
+    font-size: 8.5px;
+  }
+  /* \common */
+
+  /* features */
+  .features .bottom {
+    grid-template-columns: minmax(auto, 350px);
+  }
+  /* \features */
+
+  /* team */
+  .team .cols {
+    grid-template-columns: minmax(auto, 350px);
+  }
+  /* \team */
+
+  /* apps */
+  .apps .bottom {
+    grid-template-columns: 1fr;
+  }
+  /* \apps */
+
+  /* faq */
+  .faq .bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .faq .tabs_header {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .faq .tabs_header .btn {
+    text-align: center;
+    width: max-content;
+  }
+  /* \faq */
+
+  /* contact */
+  .contact .myLinks {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .contact .myLinks li {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .contact .contact_form .group1 {
+    grid-column: span 3;
+  }
+
+  .contact .contact_form .group2 {
+    grid-column: span 3;
+  }
+  /* \contact */
+
+  /* footer */
+  footer .container {
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+  }
+  /* \footer */
+}
+/* \mobile */

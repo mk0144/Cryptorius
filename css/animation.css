@@ -1,0 +1,198 @@
+/* banner */
+.banner .right_col .pic {
+  animation: upDown linear 3s infinite;
+}
+
+@keyframes upDown {
+  25% {
+    transform: translateY(2%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  75% {
+    transform: translateY(-2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+/* \banner */
+
+/* \heading */
+.heading_anim .heading h4 {
+  animation: heading_anim_h4 1s ease-out;
+}
+
+@keyframes heading_anim_h4 {
+  0% {
+    transform: translateY(240%);
+  }
+}
+
+.heading_anim .heading h2 {
+  animation: heading_anim_h2 1.2s ease-out;
+}
+
+@keyframes heading_anim_h2 {
+  0% {
+    transform: translateY(140%);
+  }
+}
+
+.heading_anim .heading p {
+  animation: heading_anim_p 1.4s ease-out;
+}
+
+@keyframes heading_anim_p {
+  0% {
+    transform: translateY(160%);
+  }
+}
+/* \heading */
+
+/* left */
+/* bannerAnim */
+.banner .left_col h1 {
+  animation: bannerLeftAnim_h1 1s ease-out;
+}
+
+@keyframes bannerLeftAnim_h1 {
+  0% {
+    transform: translateX(-20%);
+  }
+}
+
+.banner .left_col p {
+  animation: bannerLeftAnim_p 1.2s ease-out;
+}
+
+@keyframes bannerLeftAnim_p {
+  0% {
+    transform: translateX(-30%);
+  }
+}
+
+.banner .left_col .btn_group {
+  animation: bannerLeftAnim_btn 1.4s ease-out;
+}
+
+@keyframes bannerLeftAnim_btn {
+  0% {
+    transform: translateX(-40%);
+  }
+}
+/* \bannerAnim */
+
+.lr_anim .left_col {
+  animation: leftAnim 1s ease-out;
+}
+
+@keyframes leftAnim {
+  0% {
+    transform: translateX(-50%);
+  }
+}
+/* \left */
+
+/* right */
+.lr_anim .right_col {
+  animation: rightAnim 1s ease-out;
+}
+
+@keyframes rightAnim {
+  0% {
+    transform: translateX(50%);
+    opacity: 0.2;
+  }
+}
+/* \right */
+
+/* cols */
+.bottom_anim .bottom {
+  animation: bottom_anim 1.8s ease-out;
+}
+
+@keyframes bottom_anim {
+  0% {
+    transform: translateY(20%);
+  }
+}
+
+.col_anim .col_1 {
+  animation: col_1_anim 1s ease-out;
+}
+
+@keyframes col_1_anim {
+  0% {
+    transform: translateY(30%);
+    opacity: 0.5;
+  }
+}
+
+.col_anim .col_2 {
+  animation: col_2_anim 1.2s ease-out;
+}
+
+@keyframes col_2_anim {
+  0% {
+    transform: translateY(40%);
+    opacity: 0.5;
+  }
+}
+
+.col_anim .col_3 {
+  animation: col_3_anim 1.4s ease-out;
+}
+
+@keyframes col_3_anim {
+  0% {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+}
+
+.col_anim .col_4 {
+  animation: col_4_anim 1.6s ease-out;
+}
+
+@keyframes col_4_anim {
+  0% {
+    transform: translateY(60%);
+    opacity: 0.5;
+  }
+}
+
+.col_anim .col_5 {
+  animation: col_5_anim 1.8s ease-out;
+}
+
+@keyframes col_5_anim {
+  0% {
+    transform: translateY(70%);
+    opacity: 0.5;
+  }
+}
+
+.col_anim .col_6 {
+  animation: col_6_anim 2s ease-out;
+}
+
+@keyframes col_6_anim {
+  0% {
+    transform: translateY(80%);
+    opacity: 0.5;
+  }
+}
+/* \cols */
+
+/* tab */
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+}
+/* \tab */
