@@ -13,10 +13,6 @@ const faq = document.getElementById("faq");
 const contact = document.getElementById("contact");
 // \sections
 
-// slider
-let timeline_slider = document.getElementById("timeline_slider");
-let timeline_slides = document.getElementsByClassName("timeline_slide");
-
 // faq
 let faq_tabs = document.getElementsByClassName("faq_tab");
 let faq_tab_contents = document.getElementsByClassName("faq_tab_content");
@@ -91,35 +87,6 @@ function headerAnim() {
 }
 // \header anim
 // onScroll anim
-
-// timeline slider
-let i = 0;
-
-function sliderRight() {
-  console.log(i + timeline_slides[i]);
-
-  // timeline_slider.style.marginLeft = i * -25 + "%";
-  // timeline_slides[i].style.backgroundColor = "brown";
-  // timeline_slides[i].style.order = timeline_slides.length;
-
-  let curSlide = document.getElementsByClassName("timeline_slide")[i];
-  document.getElementsByClassName("timeline_slide")[i].remove();
-  document.getElementsByClassName("timeline_slide")[5].append(curSlide);
-  // document.getElementsByClassName("timeline_slide")[timeline_slides.length]= curSlide;
-  console.log(curSlide);
-
-  console.log(timeline_slides);
-
-  if (i === timeline_slides.length - 1) {
-    i = 0;
-  }
-  i++;
-}
-
-// let timeline_slider_interval = setInterval(function () {
-//   sliderRight();
-// },4000)
-// \timeline slider
 
 // faq
 function onTabChange(index) {
