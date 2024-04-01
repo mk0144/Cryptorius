@@ -15,12 +15,22 @@
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
-  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Poppins";
   font-size: 10px;
   line-height: 1;
   color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
 }
 
 /* custom scrollbar */
